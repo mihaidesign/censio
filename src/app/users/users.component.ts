@@ -6,7 +6,7 @@ import { trigger, style, transition, animate, keyframes, query, stagger } from '
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
-  styleUrls: ['./users.component.scss'],
+  styleUrls: ['./users.component.sass'],
   animations: [
     trigger('listStagger', [
       transition('* <=> *', [
