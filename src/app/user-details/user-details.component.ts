@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
-import { Observable } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit } from '@angular/core'
+import { DataService } from '../data.service'
+import { Observable } from 'rxjs'
+import { ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-user-details',
@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class UserDetailsComponent implements OnInit {
 
-  user$: Object;
+  user$: Object
 
   constructor(private data: DataService, private route: ActivatedRoute) {
     this.route.params.subscribe( params => this.user$ = params.id )

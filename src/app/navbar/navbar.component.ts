@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Component, OnInit } from '@angular/core'
+import { Router, NavigationEnd } from '@angular/router'
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +8,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  currentUrl: string;
+  currentUrl: string
 
   constructor(private router: Router) {
     router.events.subscribe((_: NavigationEnd) => this.currentUrl = _.url)

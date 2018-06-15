@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
-import { Observable } from 'rxjs';
+import { Component, OnInit } from '@angular/core'
+import { DataService } from '../data.service'
+import { Observable } from 'rxjs'
 
 @Component({
   selector: 'app-reviews',
@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class ReviewsComponent implements OnInit {
 
-  reviews$: Object;
+  reviews$: Object
 
   constructor(private data: DataService) { }
 
