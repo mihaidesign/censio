@@ -1,6 +1,6 @@
 {
     "/api": {
-        "target": "http://localhost:1234",
+        "target": "http://mindesign.ro/censio/",
         "secure": false,
         "changeOrigin": true
     }

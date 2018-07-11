@@ -11,21 +11,34 @@ import { UserDetailsComponent } from './user-details/user-details.component'
 import { HttpClientModule } from "@angular/common/http"
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
+import { LoginComponent } from './login/login.component'
+import { AdminComponent } from './admin/admin.component'
+import { HomeComponent } from './home/home.component'
+import { AuthService } from './auth.service'
+import { UserService } from './user.service'
+import { AuthGuard } from './auth.guard';
+import { LogoutComponent } from './logout/logout.component'
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ReviewsComponent,
     UsersComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    LoginComponent,
+    AdminComponent,
+    HomeComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [AuthService, UserService , AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

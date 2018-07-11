@@ -2,6 +2,11 @@
   <ul>
     <li>
       <a routerLink="" [class.activated]="currentUrl == '/'">
+        <i class="material-icons">home</i>
+      </a>
+    </li>
+    <li>
+      <a routerLink="users" [class.activated]="currentUrl == '/users'">
         <i class="material-icons">supervised_user_circle</i>
       </a>
     </li>
@@ -10,5 +15,16 @@
         <i class="material-icons">message</i>
       </a>
     </li>
+    <li>
+      <a routerLink="login" [class.activated]="currentUrl == '/login'">
+        <i class="material-icons">account_circle</i>Login
+      </a>
+    </li>
+    <li>
+      <a routerLink="admin" [class.activated]="currentUrl == '/admin'">
+        <i class="material-icons">lock</i>
+      </a>
+    </li>
+    
   </ul>
 </nav>
